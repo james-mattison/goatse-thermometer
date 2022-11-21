@@ -1,0 +1,16 @@
+<html>
+	<title>Goatse Temperature</title>
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'favicon.ico') }}">
+	<body>
+		<img id="temp" src="{{ url_for('static', filename = 'temperature.png') }}">
+		</img>
+	</body>
+	<script>
+		setInterval(function() {
+			var timestamp = new Date().getTime();
+			var temp = document.getElementById("temp");
+			temp.src = '{{ url_for("static", filename = "temperature.png") }}?rand=' + Math.random();
+		}, 60000);
+		
+	</script>
+</html>
