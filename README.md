@@ -2,4 +2,4 @@
 
 Display the temperature and humidity on a delightful goatse background!
 
-![goatse-thermometer](etc/thermometer.png)
+![goatse-thermometer](etc/temperature.png)
